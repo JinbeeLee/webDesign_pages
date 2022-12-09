@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+    font-family: NanumGothic, "나눔고딕";
+}
+
+/*===========Color codes 
+Navy to white { #053742, #39A2DB, #A2DBFA, #E8F0F2 }
+Navy to skyblue { #1A374D, #406882, #6998AB, B1D0E0 }
+Red to yellow { #9D0B0B, #DA2D2D, #EB8242, #F6DA63 }
+============*/
+
+/*===========기본 CSS ============*/
+h1, h2 {
+    font-family: 'Hahmlet';
+}
+header {
+    font-family: 'Hahmlet';
+    font-size: 2rem;
+}
+body { 
+    line-height: 1.5;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+image {
+    max-width: 100%;
+}
+
+.logo {
+    width: 200px;   
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1500px;
+    margin: 0 10px;
+    padding: 0 4%
+}
+
+/*============ nav menu =============*/
+.main-nav {
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 40px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 35px;
+}
+.main-nav a {
+    color: #1A374D;
+}
+.main-nav a:hover {
+    color: #39A2DB;
+}
+
+/*============ home content =============*/
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.25rem;
+    margin: 10px 0 50px;
+}
+.page-title {
+    font-size: 2.5rem;
+    font-family: 'Hahmlet';
+    font-weight: bold;
+}
+.button {
+    font-size: 1.5 rem;
+    background:#1A374D;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+.button:hover {
+    background: #39A2DB;
+}
+
+/*============== home div ================*/
+.bgImage {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+#home {
+    background-image: url(./images/coverPage_medium.png);
+    min-height: 100vh;
+}
