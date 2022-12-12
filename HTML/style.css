@@ -17,7 +17,7 @@ h1, h2 {
 }
 header {
     font-family: 'Hahmlet';
-    font-size: 2rem;
+    font-size: 2 rem;
 }
 body { 
     line-height: 1.5;
@@ -29,9 +29,15 @@ a {
 image {
     max-width: 100%;
 }
+.container{
+    position: relative; 
+    width: 100%; 
+    margin-bottom: 1.5rem;
+}
 
 .logo {
-    width: 200px;   
+    width: 200px;
+    margin-top: 20px;   
 }
 .page-header {
     display: flex;
@@ -39,8 +45,8 @@ image {
 }
 .wrapper {
     max-width: 1500px;
-    margin: 0 0 0 10px;
-    padding: 0 4%;
+    margin: 0 25px;
+    padding: 0 5%;
 }
 
 /*============ nav menu =============*/
@@ -48,7 +54,7 @@ image {
     display: flex;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 30px;
     list-style: none;
 }
 .main-nav li {
@@ -64,7 +70,7 @@ image {
 /*============ home content =============*/
 .home-content {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .home-content p {
     font-size: 1.25rem;
@@ -97,36 +103,88 @@ image {
     min-height: 100vh;
 }
 
-/*=========== Info ===========*/
-#info {
-    background-image: url(./images/HeadImage.png);
-    height: 200px;
-    margin-bottom: 30px;
-    align-items: center;
-}
-#info .page-title{
-    text-align: center;
-}
-
 /*============= footer ===============*/
 footer {
     background-color: #1A374D;
     text-align: ceter;
-    padding: 26px 0;
+    padding: 25px 0;   
+    align-items: flex-end; 
 }
-footer p{
+footer p{ 
     color: #fff;
     font-size: 0.8rem;
 }
 
 article {
-    width: 50%;
+    width: 70%;
 }
 aside {
     width: 20%;
+    margin-top: 10%;
 }
+
+/*===========info===========*/
+
+#info {
+    background-image: url(./images/HeadImage.png);
+    height: 200px;
+    margin-bottom: 30px;
+    align-items: flex-end;
+}
+#info .page-title{
+    text-align: center;
+}
+
 .info-contents {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+.post-info {
+    position: relative;
+    padding-top: 3px;
+    margin-bottom: 30px;
+}
+.post-title{
+    font-family: 'Hahmlet';
+    font-size: 1.8rem;
+    font-weight: strong;
+    align-items: center;
+    color: #1A374D;
+}
+.post-date {
+    color: #406882;
+    font-size: small;
+}
+div p {
+    margin-bottom: 1.5rem;
+}
+
+/*========사이드바 네비==========*/
+.sub-title{
+    font-size: 1.2rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #39A2DB solid;
+    font-weight: normal;
+}
+aside p {
+    padding: 12px 10px;
+}
+.sub-list{
+    margin-bottom: 100px;
+    list-style: none;
+}
+.sub-list li{
+    border-bottom: 2px #B1D0E0 solid;
+    margin-bottom: 10px;
+}
+.sub-list {
+    color: #1A374D;
+    padding: 10px;
+    display: block;
+}
+.sub-list a:hover {
+    color: #39A2DB;
 }
