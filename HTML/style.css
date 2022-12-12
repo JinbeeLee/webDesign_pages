@@ -25,13 +25,17 @@ body {
 }
 a {
     text-decoration: none;
+    color: #406882;
+}
+a:hover {
+    color: #39A2DB;
 }
 image {
     max-width: 100%;
 }
 .container{
     position: relative; 
-    width: 50%; 
+    width: 70%; 
     margin-bottom: 1.5rem;
 }
 
@@ -46,7 +50,8 @@ image {
 .wrapper {
     max-width: 1500px;
     margin: 0 25px;
-    padding: 0 5%;
+    padding: 5px 5%; 
+    align-items: flex-end; 
 }
 
 /*============ nav menu =============*/
@@ -124,7 +129,6 @@ aside {
 }
 
 /*===========info===========*/
-
 #info {
     background-image: url(./images/HeadImage.png);
     height: 200px;
@@ -162,7 +166,13 @@ div p {
     margin-bottom: 1.5rem;
 }
 
-/*========사이드바 네비==========*/
+/*========aside nav==========*/
+aside {
+    align-content: flex-start;
+    position: fixed;
+    top: 20%;
+    left: 70%;
+}
 .sub-title{
     font-family: 'Hahmlet';
     font-size: 1.2rem;
@@ -171,20 +181,20 @@ div p {
     font-weight: normal;
 }
 aside p {
-    padding: 12px 10px;
+    padding: 10px 10px;
+    font-size: 0.7em;
 }
 .sub-list{
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+    font-size: 0.7em;
     list-style: none;
+    color: #1A374D;
+    padding: 10px;
+    display: block;
 }
 .sub-list li{
     border-bottom: 2px #B1D0E0 solid;
     margin-bottom: 10px;
-}
-.sub-list {
-    color: #1A374D;
-    padding: 10px;
-    display: block;
 }
 .sub-list a:hover {
     color: #39A2DB;
@@ -192,18 +202,23 @@ aside p {
 
 /*=======Topic========*/
 .post-topic {
-    
     align-content: center;
     font-size: 1.5rem;
     margin-left: 3px;
     margin-right: 3px;
 }
-table {
-    border-color: #1A374D;
-    background-color: #B1D0E0;
+table, tr, td {
+    border-color: #406882;
+    align-content: space-between;
 }
 td p{
     font-size: 0.8rem;
     margin: 3px 0 0 3px;
     text-align: left;
+}
+
+/*========= Country ========*/
+.capture {
+    position: center;
+    
 }
